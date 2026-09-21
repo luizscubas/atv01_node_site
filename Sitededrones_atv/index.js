@@ -8,9 +8,9 @@ app.set('view engine', 'ejs')
 // Define o uso da pasta "public" para uso de arquivos estáticos
 app.use(express.static('public'))
 
-import ServicoController from "./controllers/ServicoController.js";
-import DroneController from "./controllers/DroneController.js";
-import FabricanteController from "./controllers/FabricanteController.js";
+import ServicoController from "./controllers/ServicosController.js";
+import DroneController from "./controllers/DronesController.js";
+import FabricanteController from "./controllers/FabricantesController.js";
 
 // ROTA PRINCIPAL
 app.get("/",function(req,res){

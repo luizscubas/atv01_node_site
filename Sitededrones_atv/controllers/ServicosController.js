@@ -44,10 +44,10 @@ const servicos = [
     }
 ];
 
-router.get('/aplicacoes', (req, res) => {
-    res.render('aplicacoes', { 
+app.get('/servicos', (req, res) => {
+    res.render('servicos', { 
         pageTitle: 'Áreas de Trabalho com Drones',
-        aplicacoes: aplicacoes 
+        servicos: servicos 
     });
 });
 

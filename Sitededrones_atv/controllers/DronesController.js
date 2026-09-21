@@ -1,5 +1,5 @@
 import express from "express";
-const app = express.Router(); 
+const app = express.Router();
 
 const drones = [
     { modelo: "DJI Agras T40", fabricante: "DJI Agriculture", tipo: "Multirrotor", mtow: "101 kg", imagem: "imgs/drones/drone1.jpg" },
@@ -12,7 +12,7 @@ const drones = [
 app.get('/drones', (req, res) => {
     res.render('drones', { 
         pageTitle: 'Frota de Drones',
-        drones: drones 
+        drones: drones
     });
 });
 export default app
