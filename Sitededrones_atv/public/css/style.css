@@ -1,0 +1,28 @@
+body {
+    background-color: #f1f1f1;
+}
+
+ul {
+    list-style: square;
+    line-height: 30px;
+}
+
+a {
+    color:#0ba7c6;
+    text-decoration: none;
+    padding: 20px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+footer {
+    text-align: center;    
+}

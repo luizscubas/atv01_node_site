@@ -1,0 +1,45 @@
+<%- include ('partials/header.ejs') %>
+    <%- include ('partials/navbar.ejs') %>
+
+        <div class="container">
+            <div class="card">
+                <div class="card-header">
+                    <h1>Drones</h1>
+                </div>
+                <div class="card-body">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>Modelo:</th>
+                                <th>Fabricante:</th>
+                                <th>Tipo:</th>
+                                <th>MTOW:</th>
+                                <th>Imagem:</th>
+                            </tr>   
+                        </thead>
+                        <tbody>
+                            <% drones.forEach(drone=> { %>
+                                <tr>
+                                    <td><img src="<%= drone.imagem %>" width="30px"></td>
+                                    <td>
+                                        <%= drone.modelo %>
+                                    </td>
+                                    <td>
+                                        <%= drone.fabricante %>
+                                    </td>
+                                    <td>
+                                        <%= drone.tipo %>
+                                    </td>
+                                    <td>
+                                        <%= drone.mtow %>
+                                    </td>
+                                </tr>
+                                <% }) %>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <%- include ('partials/footer.ejs') %>

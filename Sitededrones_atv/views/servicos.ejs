@@ -1,0 +1,37 @@
+<%- include ('partials/header.ejs') %>
+<%- include ('partials/navbar.ejs') %>
+
+    <div class="container">
+        <div class="card">
+            <div class="card-header">
+                <h1>Serviços</h1>
+            </div>
+            <div class="card-body">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nome:</th>
+                            <th>Setor:</th>
+                            <th>Descrição:</th>
+                            <th>Drone recomendado:</th>
+                            <th>Sensores:</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <% servicos.forEach(servico => { %>
+                        <tr>
+                            <td><img src="<%= servico.imagem %>" width="30px"></td>
+                            <td><%= servico.nome %></td>
+                            <td><%= servico.setor %></td>
+                            <td><%= servico.descricao %></td>
+                            <td><%= servico.droneRecomendado %></td>
+                            <td><%= servico.sensores %></td>
+                        </tr>
+                        <% }) %>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+<%- include ('partials/footer.ejs') %>
