@@ -1,9 +1,6 @@
 // Importando o Express
 import express from "express";
 
-//importando o arquivo de conexão do sequelize
-import connection from './config/sequelize-config.js';
-
 // Iniciando o Express 
 const app = express();
 // Define o EJS como Renderizador de páginas
@@ -25,16 +22,6 @@ app.get("/",function(req,res){
 app.use("/", ServicoController);
 app.use("/", DroneController);
 app.use("/", FabricanteController);
-
-//realizando a conexão com o banco de dados
-connection.authenticate().then(() => {
-    //sucesso na promessa: 
-    console.log("Conexão com banco de dados realizada com sucesso");
-    //falha na promessa:
-}).catch((error) => {
-    console.log(`Ocorreu um erro ao conectar ao banco de dados: ${error}`);
-});
-
 
 // INICIA O SERVIDOR NA PORTA 8080
 const port = 8080;
