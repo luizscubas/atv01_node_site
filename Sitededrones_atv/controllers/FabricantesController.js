@@ -3,7 +3,6 @@ const app = express.Router();
 
 const fabricantes = [
     { 
-        id: 1, 
         nome: "DJI (Da-Jiang Innovations)", 
         paisOrigem: "China", 
         anoFundacao: 2006, 
@@ -12,7 +11,6 @@ const fabricantes = [
         imagem: "imgs/fabricantes/fab1.png"
     },
     { 
-        id: 2, 
         nome: "Quantum-Systems", 
         paisOrigem: "Alemanha", 
         anoFundacao: 2015, 
@@ -21,7 +19,6 @@ const fabricantes = [
         imagem: "imgs/fabricantes/fab2.jpg"
     },
     { 
-        id: 3, 
         nome: "AgEagle (senseFly)", 
         paisOrigem: "Estados Unidos / Suíça", 
         anoFundacao: 2010, 
@@ -30,7 +27,6 @@ const fabricantes = [
         imagem: "imgs/fabricantes/fab3.jpg"
     },
     { 
-        id: 4, 
         nome: "XAG", 
         paisOrigem: "China", 
         anoFundacao: 2007, 
@@ -39,7 +35,6 @@ const fabricantes = [
         imagem: "imgs/fabricantes/fab4.png"
     },
     { 
-        id: 5, 
         nome: "Skydio", 
         paisOrigem: "Estados Unidos", 
         anoFundacao: 2014, 

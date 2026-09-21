@@ -2,8 +2,7 @@ import express from "express";
 const app = express.Router();
 
 const servicos = [
-    { 
-        id: 1, 
+    {  
         area: "Pulverização Agrícola", 
         descricao: "Aplicação ultrabaixo volume (UBV) de defensivos e fertilizantes biológicos com alta precisão e baixo consumo hídrico.", 
         droneRecomendado: "Multirrotores de Carga Pesada (ex: Agras T40, XAG P100)", 
@@ -12,7 +11,6 @@ const servicos = [
         imagem: "imgs/servicos/servico1.jpg" 
     },
     { 
-        id: 2, 
         area: "Operações Táticas e Segurança Pública", 
         descricao: "Vigilância perimetral, patrulhamento preventivo, controle de fronteiras e apoio a operações policiais ostensivas.", 
         droneRecomendado: "Multirrotores táticos de rápida implantação", 
@@ -20,8 +18,7 @@ const servicos = [
         setor: "Segurança e Defesa",
         imagem: "imgs/servicos/servico2.jpg"
     },
-    { 
-        id: 3, 
+    {  
         area: "Mapeamento Topográfico e Georreferenciamento", 
         descricao: "Levantamento aerofotogramétrico de grandes glebas, geração de nuvens de pontos 3D, curvas de nível e modelos de elevação.", 
         droneRecomendado: "eVTOLs e Asas Fixas (ex: Trinity F90+, eBee X)", 
@@ -29,8 +26,7 @@ const servicos = [
         setor: "Engenharia e Mineração",
         imagem: "imgs/servicos/servico3.jpg"
     },
-    { 
-        id: 4, 
+    {  
         area: "Inspeção Industrial e Infraestrutura", 
         descricao: "Verificação detalhada de linhas de transmissão de energia, pás eólicas, estruturas de pontes e tanques de refinarias sem risco humano.", 
         droneRecomendado: "Drones industriais com proteção IP (ex: Matrice 350 RTK)", 
@@ -39,7 +35,6 @@ const servicos = [
         imagem: "imgs/servicos/servico4.jpg"
     },
     { 
-        id: 5, 
         area: "Busca e Salvamento (SAR)", 
         descricao: "Varredura rápida em matas, montanhas ou cenários de desastres naturais para localização de vítimas soterradas ou perdidas.", 
         droneRecomendado: "Multirrotores para clima severo e vento forte", 
